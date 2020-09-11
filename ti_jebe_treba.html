@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<hmtl>
+ <head>
+  <title>text comparator ok</title> 
+ </head>
+ <body>
+  <style>
+      textarea {
+          resize: none;
+      }
+      br {
+          user-select: none;
+      }
+  </style>
+   <center>
+    <br>
+    <h4>text comparator epick jj smrdis</h4>
+    <br>
+    <br>
+    <br>
+    <div class="right">
+     <textarea id="textarea-left" cols="100" rows="10"></textarea>
+    </div>
+    <br>
+    <br>
+    <button onclick="vysakuj()">compare</button>
+    <br>
+    <br>
+    <div class="right">
+     <textarea id="textarea-right"  cols="100" rows="10"></textarea>
+    </div>   
+    <br>
+    <br>
+    <br>
+    <p><b>RESULT:</b> <p id="result">vysakoval jsi fuzova koka</p></p>
+   </center> 
+ </body>
+ <script>
+     function vysakuj() {
+         var prava = document.getElementById('textarea-right').value
+         var leva = document.getElementById('textarea-left').value
+         var result = document.getElementById('result')
+        if (prava !== leva) {
+            result.innerText = "kamo gg neni to stejne nice";
+        }
+        if (prava == leva) {
+           result.innerText = "texty jsou stejne tak nevim co ti je lol fuzo by te mel rozbit" 
+        } 
+       }
+ </script>
+</hmtl>
